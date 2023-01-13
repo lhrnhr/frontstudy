@@ -1,2 +1,3 @@
 Git has a mutable index called stage.
 stupid boss
+stupid boss2
