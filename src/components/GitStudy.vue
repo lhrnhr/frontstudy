@@ -59,14 +59,22 @@
     </li>
     <li>分支管理
       <ul>
-        <li>创建并切换到dev分支，使用指令git checkout -b dev相当于，新建分支指令git branch dev→切换分支指令git checkout dev</li>
+        <li>创建并切换到dev分支，使用指令git checkout -b dev或者git switch -c dev相当于，新建分支指令git branch dev→切换分支指令git checkout dev</li>
       <Copy text="git checkout -b 分支名"></Copy>
       <Copy text="git branch 分支名"></Copy>
       <Copy text="git checkout 分支名"></Copy>
+      <Copy text="git switch -c 分支名">新建+切换</Copy>
+      <Copy text="git switch 分支名">切换</Copy>
         <li>在切换到dev分支时，需要保证修改的内容在dev分支先提交</li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>提交后，把提交后的东西和master合并，使用指令git merge dev</li>
+      <Copy text="git merge 分支名"></Copy>
+        <li>然后删除dev分支</li>
+      <Copy text="git branch -d dev"></Copy>
+        <li>当分支commit后，切换到master，修改后也commit，当两者出现冲突时，无法快速合并，必须手动解决冲突后再提交</li>
+     <li>使用git status可以查看冲突文件</li>
+      <Copy text="git status"></Copy>
+      <li>使用带参数的git log可以查看分支的合并情况</li>
+      <Copy text="git log --graph --pretty=oneline --abbrev-commit"></Copy>
       </ul>
     </li>
     </ul>
