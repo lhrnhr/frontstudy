@@ -49,7 +49,7 @@
     <ul>
       <li>在github新建一个仓库，然后在本地使用指令git remote add origin git@github.com:lhrnhr/fontstudy.git，其中origin是远程库的名字</li>
       <Copy text="git remote add origin git@github.com:lhrnhr/frontstudy.git"></Copy>
-      <li>本地库推送到git远程库</li>
+      <li>本地库推送到git远程库,后面的每次推送不需要加-u</li>
       <Copy text="git push -u origin master"></Copy>
       <li>克隆指令</li>
       <Copy text="git clone git@github.com:lhrnhr/frontstudy.git"></Copy>
