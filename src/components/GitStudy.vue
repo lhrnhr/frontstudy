@@ -63,11 +63,12 @@
       <Copy text="git checkout -b 分支名"></Copy>
       <Copy text="git branch 分支名"></Copy>
       <Copy text="git checkout 分支名"></Copy>
-        <li>hhh</li>
+        <li>在切换到dev分支时，需要保证修改的内容在dev分支先提交</li>
         <li></li>
         <li></li>
         <li></li>
       </ul>
+      <span>dev</span>
     </li>
     </ul>
   </div>
