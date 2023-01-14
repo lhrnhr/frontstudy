@@ -32,3 +32,4 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 <!-- 这是学git改的内容 -->
 <!-- repeat -->
 <!-- Git has a mutable index called stage. -->
+Switched to a new branch 'dev'
