@@ -45,8 +45,8 @@
         <li>id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，也是在GitHub中需要复制的内容</li>
       </ul>
     </li>
-    <li>添加远程git仓库</li>
-    <ul>
+    <li>添加远程git仓库
+      <ul>
       <li>在github新建一个仓库，然后在本地使用指令git remote add origin git@github.com:lhrnhr/fontstudy.git，其中origin是远程库的名字</li>
       <Copy text="git remote add origin git@github.com:lhrnhr/frontstudy.git"></Copy>
       <li>本地库推送到git远程库,后面的每次推送不需要加-u</li>
@@ -56,10 +56,14 @@
       <li>删除远程库</li>
       <Copy text="git remote rm origin"></Copy>
     </ul>
+    </li>
     <li>分支管理
       <ul>
-        <li>git checkout -b dev完成分支的创建和切换，相当于创建指令git branch dev→切换指令</li>
-        <li></li>
+        <li>创建并切换到dev分支，使用指令git checkout -b dev相当于，新建分支指令git branch dev→切换分支指令git checkout dev</li>
+      <Copy text="git checkout -b 分支名"></Copy>
+      <Copy text="git branch 分支名"></Copy>
+      <Copy text="git checkout 分支名"></Copy>
+        <li>在切换到dev分支时，需要保证修改的内容在dev分支先提交</li>
         <li></li>
         <li></li>
         <li></li>
