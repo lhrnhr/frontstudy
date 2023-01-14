@@ -48,7 +48,7 @@
     <li>添加远程git仓库</li>
     <ul>
       <li>在github新建一个仓库，然后在本地使用指令git remote add origin git@github.com:lhrnhr/fontstudy.git，其中origin是远程库的名字</li>
-      <Copy text="git remote add origin git@github.com:lhrnhr/fontstudy.git"></Copy>
+      <Copy text="git remote add origin 1225018666@qq.com:lhrnhr/fontstudy.git"></Copy>
       <li>本地库推送到git远程库</li>
       <Copy text="git push -u origin master"></Copy>
       <li></li>
