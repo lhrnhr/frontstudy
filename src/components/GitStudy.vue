@@ -56,7 +56,15 @@
       <li>删除远程库</li>
       <Copy text="git remote rm origin"></Copy>
     </ul>
-    <li>分支管理</li>
+    <li>分支管理
+      <ul>
+        <li>git checkout -b dev完成分支的创建和切换，相当于创建指令git branch dev→切换指令</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </li>
     </ul>
   </div>
 </template>
