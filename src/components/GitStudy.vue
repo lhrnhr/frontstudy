@@ -68,7 +68,6 @@
         <li></li>
         <li></li>
       </ul>
-      <span>dev</span>
     </li>
     </ul>
   </div>
