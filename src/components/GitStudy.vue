@@ -56,6 +56,7 @@
       <li>删除远程库</li>
       <Copy text="git remote rm origin"></Copy>
     </ul>
+    <li>分支管理</li>
     </ul>
   </div>
 </template>
