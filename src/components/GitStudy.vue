@@ -75,6 +75,8 @@
       <Copy text="git status"></Copy>
       <li>使用带参数的git log可以查看分支的合并情况</li>
       <Copy text="git log --graph --pretty=oneline --abbrev-commit"></Copy>
+      <li>也可以禁用fast forward模式进行合并</li>
+      <Copy text="git merge --no-ff -m 注释(加引号) dev"></Copy>
       </ul>
     </li>
     </ul>
