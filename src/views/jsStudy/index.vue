@@ -29,7 +29,7 @@ export default{
         label: '高频词汇'
       }, {
         value: 'objectBegin',
-        label: '初学'
+        label: 'object初学'
       }],
       value: ''
     }
