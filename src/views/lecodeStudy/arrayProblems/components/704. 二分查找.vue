@@ -4,17 +4,29 @@
       <el-header>Header</el-header>
       <el-container>
         <el-aside width="50%">aside</el-aside>
-        <el-main>Main</el-main>
+        <el-main>
+          <el-button @click="drawOn">画画</el-button>
+          <ImgDraw v-if="drawOnOff"/>
+        </el-main>
       </el-container>
     </el-container>
   </div>
 </template>
 
 <script>
+import ImgDraw from '@/components/imgDraw/imgDraw.vue'
 export default {
   name: 'SevenZeroFour',
+  components: {ImgDraw},
   data () {
-    return {}
+    return {
+      drawOnOff: false
+    }
+  },
+  methods: {
+    drawOn () {
+      this.drawOnOff = !this.drawOnOff
+    }
   }
 }
 </script>
