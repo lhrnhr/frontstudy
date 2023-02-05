@@ -8,7 +8,7 @@
       <el-button @click="test1">测试1</el-button>
       <li>读取对象中没有的属性，不会报错，而是返回undefined。使用[]读取对象的属性值，更加灵活，可以传入变量，读取对应的属性值</li>
       <li>检查对象中是否含有某属性，使用in，比如'name' in obj</li>
-    <a href="https://www.bilibili.com/video/BV1YW411T7GX?p=51&spm_id_from=pageDriver&vd_source=9978ee19b8275eb2dd1ba355f79d4617" target="blank"><h1>第51个视频</h1></a>
+      <el-button @click="testStar">测试构造函数</el-button>
   </div>
 </template>
 
@@ -26,7 +26,20 @@ export default {
       var obj = {name: 'lhr', age: 25, 123: 'hhh'}
       console.log('', obj.name)
       console.log('name' in obj)
-      alert(obj['123'])
+      alert(obj['123']) // 对于特殊字符的key，在取值时，需要使用['key']
+    },
+    Star (age, name, year) {
+      this.name = name
+      this.age = age
+      this.year = year
+      this.skill = function (sing) {
+        console.log(sing)
+      }
+    },
+    testStar () {
+      var ldh = new this.Star('刘德华', 2000, 18)
+      ldh.skill('冰雨')
+      console.log('ldh是啥', ldh)
     }
   }
 }

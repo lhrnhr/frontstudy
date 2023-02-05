@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 // import HelloWorld from '@/components/HelloWorld'
+import Home from '@/views/index'
 import cssStudy from '@/views/cssStudy/index.vue'
 import jsStudy from '@/views/jsStudy/index.vue'
 import lecodeStudy from '@/views/lecodeStudy/index.vue'
@@ -10,6 +11,11 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
+    {
+      path: '/',
+      name: 'home',
+      component: Home
+    },
     {
       path: '/cssStudy',
       name: 'cssStudy',
