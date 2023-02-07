@@ -8,7 +8,9 @@
       <el-button @click="test1">测试1</el-button>
       <li>读取对象中没有的属性，不会报错，而是返回undefined。使用[]读取对象的属性值，更加灵活，可以传入变量，读取对应的属性值</li>
       <li>检查对象中是否含有某属性，使用in，比如'name' in obj</li>
-      <el-button @click="testStar">测试构造函数</el-button>
+      <li>函数也是一个对象，具有对象的功能，比对象具有更强大的功能，可以封装代码</li>
+      <el-button @click="testStar">测试构造函数（虽然开发中很少使用）</el-button>
+      <span>{{a}}</span><el-button @click="aChange">a+1</el-button>
   </div>
 </template>
 
@@ -17,10 +19,13 @@ export default {
   name: 'objectBegin',
   data () {
     return {
-
+      a: 0
     }
   },
   methods: {
+    aChange () {
+      this.a = this.a + 1
+    },
     test1 () {
       // 删除对象的属性使用delete
       var obj = {name: 'lhr', age: 25, 123: 'hhh'}
@@ -40,6 +45,9 @@ export default {
       var ldh = new this.Star('刘德华', 2000, 18)
       ldh.skill('冰雨')
       console.log('ldh是啥', ldh)
+      console.log(function () {}.constructor, 'function () {}.constructor是什么')
+      console.log(Function, 'Function是什么')
+      console.log(function () {}.constructor === Function, '两个相等')
     }
   }
 }

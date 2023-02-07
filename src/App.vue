@@ -14,8 +14,16 @@
 </template>
 
 <script>
+import Home from '@/views/index.vue'
+import devPixelRatio from './utils/devicePixelRatio'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {Home},
+  created () {
+    // 实现的效果是无论怎么缩放页面，整体的位置也不会变化
+    // eslint-disable-next-line new-cap
+    new devPixelRatio().init() // 初始化页面比例
+  }
 }
 </script>
 
@@ -25,7 +33,6 @@ body{
 }
 .home{
   /* 背景色 */
-
 position: relative;
 /* left: 231px;
 top: 218px; */
